@@ -5,3 +5,29 @@
 #footer {
     text-align: center;
 }
+
+h1 {
+    font-family: "times new roman", times, serif;
+}
+
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 a {
+    font-family: helvetica, sans-serif;
+    text-decoration: none;
+}
+
+h4 {
+    border-bottom: 0.1em solid #000;
+    margin-bottom: 0.5em;
+}
+
+h4 a {
+    font-family: helvetica, sans-serif;
+    text-decoration: none;
+}
+
