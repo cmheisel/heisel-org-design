@@ -47,6 +47,14 @@ h4 a:hover {
     color: #009; 
 }
 
+h5 {
+    margin-bottom: 0.5em;
+}
+
+.comments p {
+    margin-left: 1em;
+}
+
 #nav a {
     padding-right: .5em;
     padding-left: .5em;

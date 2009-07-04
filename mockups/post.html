@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
     <head>
-        <title>Chris Heisel</title>
+        <title>Pywatch: run tests when your code changes | Chris Heisel</title>
 
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 
@@ -16,39 +16,99 @@
         <div class="container">
 
             <div class="span-12 prepend-6 append-6 last" id="header">
-                <h1>heisel.org</h1>
+                <h1><a href="index.html">heisel.org</a></h1>
+                <p id="nav">
+                    <a href="posts.html">Posts</a> |
+                    <a href="http://twitter.com/cmheisel">Twitter</a> |
+                    <a href="links.html">Links</a> |
+                    <a href="code.html">Code</a> |
+                    <a href="elsewhere.html">Elsewhere</a> | 
+                    <a href="about.html">About</a> 
+                </p>
+
             </div>
 
             <div class="span-10 prepend-7 append-7 last clear" id="content">
-                <h4><a href="posts.html">Posts &raquo;</a></h4>
-                <h2><a href="post.html">Pywatch: Run tests when your code changes</a></h2>
-                <p>I’m happy to announce that pywatch is ready for use, I think.</p>
+                <h4><a href="monthly.html" title="More in June">June 20, 2009 &raquo;</a></h4>
+                <h2>Pywatch: Run tests when your code changes</h2>
+		        
+                <p>I&#8217;m happy to announce that <a href="http://github.com/cmheisel/pywatch/tree/master">pywatch</a> is ready for use, I&nbsp;think.</p>
 
-                <h4><a href="http://twitter.com/cmheisel">Twitter &raquo;</a></h4>
-                <p>Annndddd work has ground to a halt.</p>
+                <p>What does it do? It&#8217;s both a Python module and a com&shy;mand line client that allow you to run arbi&shy;trary shell com&shy;mands when&shy;ever changes occur in a list of spec&shy;i&shy;fied&nbsp;files.</p>
 
-                <h4><a href="links.html">Links &raquo;</a></h4>
-                <p><a href="http://leanandkanban.wordpress.com/2009/06/27/pulling-value-lean-and-kanban-presentation/">A wealth of knowledge on kanban</a> &ndash; From the Lean and Kanban blog comes a very long, but information rich, presentation on the kanban principles, differentiation from scrum, and a lot of good practical examples.</p>
-                <p><a href="http://www.tbray.org/ongoing/When/200x/2009/06/23/TDD-Heresy">ongoing · Test-Driven Heresy</a> &ndash; I'm normally a "you must absolutely write your tests first" guy, but I can see the argument that on a new project/component you may be more efficient scratching around and then writing tests. But whatever you do, by god, write tests before the code goes into production.</p>
+                <p>Here&#8217;s an exam&shy;ple:
+                <pre>
+pywatch --help
+Usage: pywatch [options] "command" file1 file2 ...</p>
 
-                <h4><a href="http://github.com/cmheisel/">Code &raquo;</a></h4>
+<p>Options:
+  -h, --help     show this help message and exit
+  -v, --verbose  Output timestamp when commands are run.
+chris@pinko:~/Code/pywatch$ pywatch -v ./bin/test src/pywatch/watcher.py src/pywatch/tests.py</p>
+
+<p>Running commands at 2009-06-20 12:00:13.226711
+Running zope.testing.testrunner.layer.UnitTests tests:
+  Set up zope.testing.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 4 tests with 0 failures and 0 errors in 2.003 seconds.
+Tearing down left over layers:
+  Tear down zope.testing.testrunner.layer.UnitTests in 0.000 seconds.</p>
+
+<p>Running commands at 2009-06-20 12:00:34.422557
+Test-module import failures:</p>
+
+<p>Module: pywatch.tests</p>
+
+<p>Traceback (most recent call last):
+  File "/home/chris/Code/pywatch/src/pywatch/tests.py", line 1, in <module>
+    import makethistestblowup
+ImportError: No module named makethistestblowup</p>
+
+<p>Test-modules with import problems:
+  pywatch.tests
+Total: 0 tests, 0 failures, 0 errors in 0.000 seconds.</p>
+
+<p>Running commands at 2009-06-20 12:00:44.600708
+Running zope.testing.testrunner.layer.UnitTests tests:
+  Set up zope.testing.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 4 tests with 0 failures and 0 errors in 2.006 seconds.
+Tearing down left over layers:
+  Tear down zope.testing.testrunner.layer.UnitTests in 0.000 seconds.
+                </pre></p>
+
+                <p>So far I&#8217;ve been using it to auto&shy;mat&shy;i&shy;cally run tests on per&shy;sonal projects, includ&shy;ing <a href="http://github.com/cmheisel/pywatch/tree/master">pywatch</a> and <a href="http://github.com/cmheisel/django-baseboard/tree/master">base&shy;boards</a>.</p>
+
+                <p>You could use it to run other arbi&shy;trary com&shy;mands when&shy;ever you change a file, but run&shy;ning tests was the par&shy;tic&shy;u&shy;lar itch I was trying to scratch.</p>
+
+                <p>It&#8217;s avail&shy;able at <a href="http://github.com/cmheisel/pywatch/tree/master">GitHub</a> and <a href="http://pypi.python.org/pypi/pywatch/0.3">PyPI</a></p>
+
+                <p><strong>Filed under:</strong> <a href="posts.html">Programming</a>, <a href="posts.html">Projects</a>, <a href="posts.html">Python</a>, <a href="posts.html">Pywatch</a></p>
+
+                <p>
+                <strong>Next:</strong> <a href="post.html">Oooooh lemon-y</a></li><br>
+                    <strong>Previous:</strong> <a href="post.html">django-baseboard updated to 0.3</a>
+                </p>
+                <h4>Related</h4>
                 <ul>
-                    <li><a href="pywatch.html">pywatch</a> &ndash; watches files and runs commands</li>
-                    <li><a href="pywatch.html">django-baseboards</a> &ndash; Basecamp dashboards in Django</li>
-                    <li><a href="pywatch.html">basecampreporting</a> &ndash; Read-only API to Basecamp in Python</li>
+                    <li><a href="post.html">Announcing basecampreporting and django-baseboard</a></li>
+                    <li><a href="post.html">Adventures in unit testing the Basecamp API</a></li>
+                    <li><a href="post.html">Django testing tip: don’t test template output</a></li>
                 </ul>
 
-                <h4>Elsewhere</h4>
-                <ul>
-                    <li><a href="http://twitter.com/cmheisel">Twitter</a></li>
-                    <li><a href="http://github.com/cmheisel">GitHub</a></li>
-                    <li><a href="http://delicious.com/cheisel">Delicious</a></li>
-                    <li><a href="http://readernaut.com/cmheisel">Readernaut</a></li>
-                    <li><a href="http://www.flickr.com/photos/cmheisel/">Flickr</a></li>
-                    <li><a href="http://linked.com/cmheisel">LinkedIn</a></li>
-                    <li><a href="http://djangopeople.com">Django People</a></li>
-                    <li><a href="http://pypi.org">Python Package Index</a></li>
-                </ul>
+                <div class="comments">
+                <h4>Comments</h4>
+
+                <h5><a href="http://">Eric Holscher</a> &ndash; May 15, 2009 <a href="#">#</a></h5>
+                <p>I usu­ally test for con­text. Which is then test­ing the back­end code instead of the tem­plates actu­ally ren­der­ing the code. Seems like a good middle ground.</p>
+
+                <h5><a href="http://heisel.org">Chris Heisel</a> &ndash; May 16, 2009 <a href="#">#</a></h5>
+                <p>Eric,</p>
+
+                <p>I’m of two minds on test­ing the context.</p>
+
+                <p>If you work with design­ers who change and deploy tem­plates at will, then the con­text is almost a con­tract between the devel­oper and the designer. It should be tested to ensure that you’re always pro­vid­ing the right data with the right tem­plate vari­able names.</p>
+
+                <p>But if the devel­oper is making the tem­plate changes then it feels like you’re actu­ally test­ing an inter­nal of the app. It doesn’t matter that the blog title is avail­able as {{ blog.title }} in the tem­plate, it mat­ters that the blog title appear when I GET the page.</p>
+                </div>
             </div>
 
             <div class="span-12 prepend-6 append-6 last clear" id="footer">
