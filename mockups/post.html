@@ -108,6 +108,19 @@ Tearing down left over layers:
                 <p>If you work with design­ers who change and deploy tem­plates at will, then the con­text is almost a con­tract between the devel­oper and the designer. It should be tested to ensure that you’re always pro­vid­ing the right data with the right tem­plate vari­able names.</p>
 
                 <p>But if the devel­oper is making the tem­plate changes then it feels like you’re actu­ally test­ing an inter­nal of the app. It doesn’t matter that the blog title is avail­able as {{ blog.title }} in the tem­plate, it mat­ters that the blog title appear when I GET the page.</p>
+
+                <form action="" method="post">
+                    <label for="comment_name">Name</label><br>
+                    <input type="text" class="text" id="comment_name" name="name"><br>
+
+                    <label for="url">URL</label><br />
+                    <input type="text" class="text" id="url" name="url"><br>
+
+                    <label for="comment">Comment</label><br>
+                    <textarea id="comment" cols="20" rows="5"></textarea><br>
+
+                    <input type="submit" class="submit" value="Comment">
+                </form>
                 </div>
             </div>
 
