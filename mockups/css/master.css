@@ -1,4 +1,5 @@
 #header {
+    padding-top: 1em;
     text-align: center
 }
 
@@ -8,17 +9,27 @@
 
 h1 {
     font-family: "times new roman", times, serif;
+    color: #000;
+}
+
+h1 a {
+    text-decoration: none;
 }
 
 
 h2 {
     font-size: 1.5em;
     margin-bottom: 0.2em;
+    color: #000;
 }
 
 h2 a {
     font-family: helvetica, sans-serif;
     text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
 }
 
 h4 {
@@ -29,6 +40,19 @@ h4 {
 h4 a {
     font-family: helvetica, sans-serif;
     text-decoration: none;
+    color: #000;
 }
 
-/** Test comment **/
+h4 a:hover {
+    color: #009; 
+}
+
+#nav a {
+    padding-right: .5em;
+    padding-left: .5em;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+}
