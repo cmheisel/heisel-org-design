@@ -15,6 +15,14 @@
     <?php previous_post_link('<strong>Previous:</strong> %link', '%title', FALSE, '2'); ?>
 </p>
 
+<?php
+if(function_exists('related_entries_exist')){
+    if(related_entries_exist()) {
+        related_entries();
+    }
+}
+?>
+
 <?php endwhile; else: ?>
     <p>Sorry, no posts matched your criteria.</p>
 <?php endif; ?>
