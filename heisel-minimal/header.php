@@ -4,8 +4,9 @@
     <head>
         <title>Chris Heisel</title>
 
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-
+        <meta http-equiv="Content-Type" content="text/html;charset=<?php bloginfo('charset'); ?>">
+        <meta name="description" content="<?php bloginfo('description'); ?>">
+        
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/blueprint/screen.css" type="text/css" media="screen, projection">
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/blueprint/print.css" type="text/css" media="print">	
         <!--[if lt IE 8]><link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
@@ -14,3 +15,11 @@
     </head>
     <body>
         <div class="container">
+            <div class="span-12 prepend-6 append-6 last" id="header">
+                <?php if(is_front_page()) { ?><h1><?php bloginfo('name'); ?></h1><?php } ?>
+                <?php if(!is_front_page()) { ?><h1><a href="<?php bloginfo('home'); ?>"><?php bloginfo('name'); ?></a></h1><?php } ?>
+                
+            </div>
+            
+            <div class="span-10 prepend-7 append-7 last clear" id="content">
+            <!-- CONTENT START -->
