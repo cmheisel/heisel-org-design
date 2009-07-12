@@ -6,3 +6,4 @@
 * Code page
 * Migrate gravatar cruft
 * Migrate OpenID delegate cruft
+* Check for missing ;
