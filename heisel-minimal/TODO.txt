@@ -4,3 +4,5 @@
 * Category archives
 * Blogmark archives
 * Code page
+* Migrate gravatar cruft
+* Migrate OpenID delegate cruft
