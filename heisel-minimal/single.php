@@ -8,6 +8,8 @@
 
 <?php the_content('<p>Read the rest of this entry &raquo;</p>'); ?>
 
+<p><strong>Filed under:</strong> <?php the_category(','); ?></p>
+
 <?php endwhile; else: ?>
     <p>Sorry, no posts matched your criteria.</p>
 <?php endif; ?>
