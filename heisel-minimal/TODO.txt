@@ -1,0 +1,6 @@
+* Post page
+* Post comments
+* Post archives
+* Category archives
+* Blogmark archives
+* Code page
