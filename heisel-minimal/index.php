@@ -10,8 +10,10 @@
 <?php endwhile; ?>
 <?php endif; ?>
 
+<?php if(function_exists('twitter_messages')): ?>
 <h4><a href="http://twitter.com/cmheisel">Twitter &raquo;</a></h4>
-<p>TODO</p>
+<p><?php twitter_messages('cmheisel', 1, false, false, '&raquo;', true, true, false)?></p>
+<?php endif;?>
 
 <?php
     $today = getdate();
