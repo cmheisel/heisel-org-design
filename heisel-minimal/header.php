@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
     <head>
-        <title>Chris Heisel</title>
+        <title><?php wp_title('&mdash;', true, 'right'); ?> Chris Heisel</title>
 
         <meta http-equiv="Content-Type" content="text/html;charset=<?php bloginfo('charset'); ?>">
         <meta name="description" content="<?php bloginfo('description'); ?>">
@@ -16,9 +16,22 @@
     <body>
         <div class="container">
             <div class="span-12 prepend-6 append-6 last" id="header">
-                <?php if(is_front_page()) { ?><h1><?php bloginfo('name'); ?></h1><?php } ?>
-                <?php if(!is_front_page()) { ?><h1><a href="<?php bloginfo('home'); ?>"><?php bloginfo('name'); ?></a></h1><?php } ?>
-                
+                <?php if(is_front_page()): ?><h1><?php bloginfo('name'); ?></h1><?php endif; ?>
+                <?php if(!is_front_page()): ?><h1><a href="<?php bloginfo('home'); ?>"><?php bloginfo('name'); ?></a></h1><?php endif; ?>
+                <?php if(!is_front_page()):  ?>
+                <p id="nav">
+                    <?php 
+                    $args = array(
+                        'orderby' => 'rating',
+                        'category_name' => "Nav",
+                    );
+                    $nav = get_bookmarks($args);
+                    foreach($nav as $key => $item):
+                    ?>
+                    <?php if($key != 0) echo " | "?><a href="<?php echo $item->link_url ?>" title="<?php echo $item->link_description ?>"><?php echo $item->link_name ?></a>
+                    <?php endforeach; ?>
+                </p>
+                <?php endif; ?>
             </div>
             
             <div class="span-10 prepend-7 append-7 last clear" id="content">
