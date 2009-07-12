@@ -28,7 +28,7 @@
     $category_id = get_cat_ID('Blogmarks');
     $category_link = get_category_link($category_id);
     ?>
-    <h4><a href="<?php echo $category_link; ?>">Posts &raquo;</a></h4>
+    <h4><a href="<?php echo $category_link; ?>">Blogmarks &raquo;</a></h4>
 <?php while ( $links_query->have_posts() ) : $links_query->the_post(); ?>
     
     <?php
@@ -46,6 +46,23 @@
 <?php
     $args = array(
         'category_name' => "Code",
+        'title_li' => '',
+        'title_before' => '',
+        'title_after' => '',
+        'categorize' => 0,
+        'show_description' => 1,
+        'between' => ' &ndash; ', 
+    );
+    wp_list_bookmarks($args);
+?>
+</ul>
+
+<!-- CODE -->
+<h4>Elsewhere</h4>
+<ul>
+<?php
+    $args = array(
+        'category_name' => "Elsewhere",
         'title_li' => '',
         'title_before' => '',
         'title_after' => '',
