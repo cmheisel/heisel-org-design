@@ -1,4 +1,3 @@
-* Post page
 * Post comments
 * Post archives
 * Category archives
@@ -10,3 +9,6 @@
 * Check on any activation work for plugins
 * Check on RSS feed
 * Check on RSS auto-discovery
+
+# TODONE
+* Post page
