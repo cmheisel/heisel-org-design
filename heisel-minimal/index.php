@@ -28,7 +28,7 @@
     $category_id = get_cat_ID('Blogmarks');
     $category_link = get_category_link($category_id);
     ?>
-    <h4><a href="<?php echo $category_link; ?>">Blogmarks &raquo;</a></h4>
+    <h4><a href="<?php echo $category_link; ?>">Links &raquo;</a></h4>
 <?php while ( $links_query->have_posts() ) : $links_query->the_post(); ?>
     
     <?php
