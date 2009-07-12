@@ -10,6 +10,11 @@
 
 <p><strong>Filed under:</strong> <?php the_category(','); ?></p>
 
+<p>
+    <?php next_post_link('<strong>Next:</strong> %link<br>', '%title', FALSE, '2'); ?>
+    <?php previous_post_link('<strong>Previous:</strong> %link', '%title', FALSE, '2'); ?>
+</p>
+
 <?php endwhile; else: ?>
     <p>Sorry, no posts matched your criteria.</p>
 <?php endif; ?>
