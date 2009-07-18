@@ -26,6 +26,9 @@
         
         <meta name="microid" content="mailto+http:sha1:1390556c66ad948d78e56e4e17cd4913f03b2fc3" />
         
+        <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/index.xml" />
+        <link rel="pingback" href="<?php bloginfo('home'); ?>/xmlrpc.php" />
+        
         <?php wp_head(); ?>
     </head>
     <body>
