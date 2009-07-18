@@ -13,9 +13,6 @@
 
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/master.css" type="text/css" media="screen, projection">
         
-        <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/index.xml" />
-        <link rel="pingback" href="<?php bloginfo('home'); ?>/xmlrpc.php" />
-        
         <link rel="openid.server"
                 href="http://www.myopenid.com/server" />
           <link rel="openid.delegate"
@@ -29,6 +26,7 @@
         
         <meta name="microid" content="mailto+http:sha1:1390556c66ad948d78e56e4e17cd4913f03b2fc3" />
         
+        <?php wp_head(); ?>
     </head>
     <body>
         <div class="container">
