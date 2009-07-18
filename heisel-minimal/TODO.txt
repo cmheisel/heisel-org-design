@@ -1,5 +1,3 @@
-* Category archives
-* Blogmark archives
 * Code page
 * Migrate gravatar cruft
 * Migrate OpenID delegate cruft
@@ -13,3 +11,5 @@
 * Post comments
 * Index page
 * Post archives
+* Category archives
+* Blogmark archives
