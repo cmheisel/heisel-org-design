@@ -23,6 +23,8 @@ if(function_exists('related_entries_exist')){
 }
 ?>
 
+<?php comments_template(); ?>
+
 <?php endwhile; else: ?>
     <p>Sorry, no posts matched your criteria.</p>
 <?php endif; ?>
