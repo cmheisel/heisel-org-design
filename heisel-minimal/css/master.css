@@ -64,3 +64,7 @@ h5 {
 #nav a:hover {
     text-decoration: underline;
 }
+
+textarea {
+    height: 8em;
+}
