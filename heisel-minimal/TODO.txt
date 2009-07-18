@@ -1,7 +1,20 @@
-* Code page
 * Elsewhere page
-* RSS feed (bookmarks vs. posts)
+
 * Check on any activation work for plugins
+
+#TODO-DEPLOY
+* Install Twitter plugin
+* Set up Archives page
+* Set up Elsewhere page
+* Set up Code page(s)
+* Set up Elsewhere link list
+* Set up Nav link list
+* Activate themes
+* Install Google Analytics for WordPress
+* Deactivate old plugins
+
+#WONTFIX
+* RSS feed (bookmarks vs. posts) (Have to hack on core files and/or abadon Feedburner)
 
 # TODONE
 * Post page
