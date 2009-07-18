@@ -1,4 +1,3 @@
-* 404
 * Migrate gravatar cruft
 * Migrate OpenID delegate cruft
 * Check for missing ;
@@ -14,3 +13,4 @@
 * Post archives
 * Category archives
 * Blogmark archives
+* 404
