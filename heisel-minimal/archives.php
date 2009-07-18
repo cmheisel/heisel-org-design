@@ -8,12 +8,4 @@
 		 ?>
 	</ul>
 
-
-<h4>By month</h4>
-	<ul>
-		<?php wp_get_archives('type=monthly'); ?>
-	</ul>
-
-
-
 <?php get_footer(); ?>
