@@ -1,10 +1,11 @@
-* Code page
+* 404
 * Migrate gravatar cruft
 * Migrate OpenID delegate cruft
 * Check for missing ;
 * Check on any activation work for plugins
 * Check on RSS feed
 * Check on RSS auto-discovery
+* Code page
 
 # TODONE
 * Post page
