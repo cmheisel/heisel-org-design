@@ -1,6 +1,8 @@
+* Page template
+* Code page
+* Elsewhere page
 * RSS feed (bookmarks vs. posts)
 * Check on any activation work for plugins
-* Code page
 
 # TODONE
 * Post page
