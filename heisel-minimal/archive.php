@@ -4,7 +4,7 @@
 global $wp_query;
 query_posts(
 	array_merge(
-		array('cat' => "-2"),
+		array('cat' => "-2", "posts_per_page" => "10"),
 		$wp_query->query
 	)
 );
@@ -17,5 +17,9 @@ query_posts(
         <?php the_excerpt(); ?>
     <?php endwhile; ?>
 <?php endif; ?>
+
+<p>
+    <strong><?php next_posts_link('&laquo; Older entries'); ?></strong>&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php previous_posts_link('Newer entries &raquo;'); ?></strong>
+</p>
 
 <?php get_footer(); ?>
