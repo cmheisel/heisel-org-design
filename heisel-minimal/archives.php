@@ -1,3 +1,9 @@
+<?php
+/**
+Template Name: Archives
+**/
+?>
+
 <?php get_header(); ?>
 
 <h4>By year</h4>
