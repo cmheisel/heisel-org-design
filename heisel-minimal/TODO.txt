@@ -1,17 +1,18 @@
-* Elsewhere page
-
 * Check on any activation work for plugins
 
 #TODO-DEPLOY
-* Install Twitter plugin
 * Set up Archives page
-* Set up Elsewhere page
 * Set up Code page(s)
+* Redirect projects page to code page
 * Set up Elsewhere link list
 * Set up Nav link list
+* Deactivate old plugins
 * Activate themes
 * Install Google Analytics for WordPress
-* Deactivate old plugins
+* Install Twitter plugin
+* Install YARPP
+* Set up Elsewhere page
+* Review pages
 
 #WONTFIX
 * RSS feed (bookmarks vs. posts) (Have to hack on core files and/or abadon Feedburner)
@@ -29,3 +30,4 @@
 * Check for missing ;
 * Check on RSS auto-discovery
 * Page template
+* Elsewhere page
