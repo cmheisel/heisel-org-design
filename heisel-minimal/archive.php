@@ -21,8 +21,9 @@ query_posts(
     <?php endif ?>
     
     <?php while ( have_posts() ) : the_post(); ?>
-        <?php if(!is_category('Blogmarks') || is_archive() ): ?>
-            <h4><a href="<?php bloginfo('home'); ?>/<?php the_time('Y'); ?>/<?php the_time('m'); ?>/" title="More in <?php the_time('F'); ?>"><?php the_date("F j, Y"); ?></a></h4>
+        <?php if(!is_category('Blogmarks') ): ?>
+            <!-- <?php echo is_category('Blogmarks'); ?> -->
+            <h4><a href="<?php bloginfo('home'); ?>/<?php the_time('Y'); ?>/<?php the_time('m'); ?>/" title="More in <?php the_time('F'); ?>"><?php the_time("F j, Y"); ?></a></h4>
             <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
             <?php the_excerpt(); ?>
         <?php else: ?>
