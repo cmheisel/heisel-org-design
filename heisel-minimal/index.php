@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- POSTS -->
-<?php $posts_query = new WP_Query('cat=-2&posts_per_page=1')?>
+<?php $posts_query = new WP_Query('cat=-2&posts_per_page=2')?>
 <?php if($posts_query->have_posts()) : ?>
     <h4><a href="<?php bloginfo('home'); ?>/<?php the_time('Y')?>/" title="Posts from <?php the_time('Y')?>">Posts &raquo;</a></h4>
 <?php while ( $posts_query->have_posts() ) : $posts_query->the_post(); ?>
