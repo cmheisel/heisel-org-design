@@ -68,3 +68,8 @@ h5 {
 textarea {
     height: 8em;
 }
+
+a img.size-thumbnail {
+    border: 1px solid #000;
+    padding: 2px;
+}
